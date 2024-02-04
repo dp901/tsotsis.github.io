@@ -301,6 +301,8 @@ section:nth-of-type(even) {
 }
 .space-bottom-large {
   margin-bottom: 80px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
 }
 .space-bottom-xlarge {
   margin-bottom: 160px !important;
@@ -436,7 +438,7 @@ nav hr {
 .logo.logo-wide {
   max-width: 140px;
   bottom: 12px;
-  margin-bottom: -6px;
+  margin-bottom: -16px;
 }
 .logo.logo-square {
   max-width: 100px;
@@ -805,6 +807,7 @@ header .btn:last-child {
 .hero-slider {
   padding: 0px;
   position: relative;
+  margin-top: 20px;
 }
 .hero-slider .slides li {
   height: 650px;
@@ -2813,7 +2816,8 @@ footer.short-2 .contact-action:hover {
     display: none;
   }
   nav {
-    max-height: 80px;
+    max-height: 108px;
+    margin-bottom: 5px;
     overflow: hidden;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -3827,6 +3831,8 @@ footer.short-2 .contact-action:hover {
   }
 }
 .simple-bar .logo {
+  margin-top: 10px;
+  margin-bottom: 45px;
   max-width: 800px;
   /*max-height: 40px;*/
   bottom: 12px;
