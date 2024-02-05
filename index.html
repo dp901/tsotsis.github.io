@@ -1,217 +1,894 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Tsotsis.gr</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/theme-1.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
-        <!--[if gte IE 9]>
-        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-		<![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-    	<div class="loader">
-    		<div class="spinner">
-			  <div class="double-bounce1"></div>
-			  <div class="double-bounce2"></div>
-			</div>
-    	</div>
-				
-		<div class="nav-container">
-			<nav class="simple-bar top-bar">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-3 columns" style="margin-top:10px;">
-							<a href="index.html">
-							<img class="logo logo-wide" alt="Logo" src="img/logo2.png">
-						</div>
-					
-						<div class="col-md-9 col-sm-9 columns text-right nav-menu">
-							<ul class="menu">
-								<a></a><li><a href="index.html" target="_self">Home</a></li><li><a href="about.html" target="_self">About us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" target="_self">Contact</a></li>
-							</ul>
-		
-						</div>
-					</div>
-					
-					<div class="mobile-toggle">
-						<i class="icon icon_menu"></i>
-					</div>
-					
-				</div>
-			</nav>
-		</div>
-		
-		<div class="main-container">
-		<a id="hero-slider" class="in-page-link"></a>
-			
-			<section class="hero-slider">
-				<ul class="slides">
-					
-					<li class="overlay">
-						<div class="background-image-holder parallax-background">
-							<img class="background-image" alt="Background Image" src="img/front.jpg">
-						</div>
-						
-						<div class="container align-vertical">
-							<div class="row">
-								<div class="col-md-6 col-sm-9">
-									<h1 class="text-white">Εγκατάσταση - Συντήρηση - Μελέτη</h1>
-									<a href="about.html" class="btn btn-primary btn-white">Περισσότερα για μας</a>
-									
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-			
-			<section class="feature-selector">
-				
-				<div class="container">
-					<ul class="selector-content">
-						<li class="clearfix active">
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<h1> Τεχνική εταιρεία ανελκυστήρων Τσοτσης & Σια. </h1>
-								</div>
-							</div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tsotsis.gr</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Anyar
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:info@tsotsis.gr">info@tsotsis.gr</a>
+        <i class="bi bi-phone-fill phone-icon"></i> 2310 601083
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="#about" class="scrollto">About us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">Anyar</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href=index.html" class="logo"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Αρχική</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Υπηρεσίες</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Νομοθεσία</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Επικοινωνία</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Καλωσήρθατε!</h2>
+          <p class="animate__animated animate__fadeInUp">Στην εταιρεία μας, δεσμευόμαστε να προσφέρουμε υπηρεσίες εγκατάστασης και συντήρησης ανελκυστήρων υψηλής ποιότητας και αξιοπιστίας. </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Περισσότερα</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Κατασκευή ανελκυστήρων στα μέτρα σας</h2>
+          <p class="animate__animated animate__fadeInUp">Αναβαθμίστε την εμπειρία σας με τους ανελκυστήρες μας - εμπιστευθείτε μας για εξειδικευμένες λύσεις και εξαιρετική εξυπηρέτηση!</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Αναλαμβάνουμε κάθε είδους μελέτες</h2>
+          <p class="animate__animated animate__fadeInUp">Εξατομικευμένες λύσεις μελέτης ανελκυστήρων για κάθε χώρο που ανταποκρίνονται στις ανάγκες σας!</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-building"></i></div>
+              <h4 class="title"><a href="">Εγκατάσταση</a></h4>
+              <p class="description">Η εταιρεία μας εξειδικεύεται στην κατασκευή ανελκυστήρων υψηλής ποιότητας και ασφάλειας. Με μια πολυετή παρουσία στον κλάδο, συνεχίζουμε να εξελίσσουμε την τεχνολογία μας και να προσφέρουμε λύσεις που ανταποκρίνονται στις ανάγκες των πελατών μας. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-vector"></i></div>
+              <h4 class="title"><a href="">Συντήρηση</a></h4>
+              <p class="description">Στην εταιρεία μας, δεσμευόμαστε να προσφέρουμε υπηρεσίες εγκατάστασης και συντήρησης ανελκυστήρων υψηλής ποιότητας και αξιοπιστίας. Με την εμπειρία μας και την τεχνογνωσία μας, εξασφαλίζουμε την ομαλή λειτουργία κάθε ανελκυστήρα, προσφέροντας ταυτόχρονα εξειδικευμένες λύσεις που προσαρμόζονται στις ανάγκες και τις απαιτήσεις κάθε πελάτη.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-analyse"></i></div>
+              <h4 class="title"><a href="">Μελέτη</a></h4>
+              <p class="description">Επιδιώκουμε την υψηλότερη ποιότητα σε κάθε στάδιο του έργου μας, από τον σχεδιασμό μέχρι την εγκατάσταση και τη συντήρηση. Με προσήλωση στην ασφάλεια και την αξιοπιστία, διασφαλίζουμε ότι κάθε ανελκυστήρας που κατασκευάζουμε ανταποκρίνεται στα υψηλότερα πρότυπα της βιομηχανίας. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-server"></i></div>
+              <h4 class="title"><a href="">Εκσυγχρονισμός</a></h4>
+              <p class="description">Επικοινωνήστε μαζί μας σήμερα για να μάθετε περισσότερες πληροφορίες σχετικά με τις υπηρεσίες μας και πώς μπορούμε να βοηθήσουμε να βελτιώσετε τον χώρο σας με ασφαλείς και αξιόπιστους ανελκυστήρες.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Η "ΤΣΟΤΣΗΣ ΑΝΕΛΚΥΣΤΗΡΕΣ" σε συνέχεια του τεχνικού γραφείου ανελκυστήρων Τσότσης Κωνσταντίνος, είναι μια εταιρία που δραστηριοποιείται κυρίως στους νομούς Θεσσαλονίκης και Χαλκιδικής με εξειδίκευση στη μελέτη και εγκατάσταση νέων ανελκυστήρων, τον εκσυγχρονισμό τους και την ανακαίνιση των ήδη εγκατεστημένων ανελκυστήρων.
+            <br />
+            Τσότσης Κ. Ιωάννης<br />
+            Δίπλ. Μηχανολόγος Μηχανικός</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Είμαστε περήφανοι για τη μακροχρόνια συνεργασία με τους πελάτες των ήδη εγκατεστημένων ανελκυστήρων μας, στους οποίους παρέχουμε υπηρεσίες τακτικής συντήρησης και επιδιόρθωσης προβλημάτων πιθανών βλαβών, με επαγγελματισμό και συνέπεια.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Κατασκευή ανελκυστήρων στα μέτρα σας</li>
+              <li><i class="ri-check-double-line"></i> Αναλαμβάνουμε κάθε είδους μελέτες</li>
+              <li><i class="ri-check-double-line"></i> Επαγγελματική συντήρηση για ασφάλεια και αξιοπιστία</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Η "ΤΣΟΤΣΗΣ ΑΝΕΛΚΥΣΤΗΡΕΣ" διαθέτει επιστημονικά καταρτισμένο και έμπειρο προσωπικό, το οποίο έχει τη γνώση να εντοπίσει και να επιλύσει προβλήματα που σχετίζονται με τον ανελκυστήρα που θέλετε να εγκαταστήσετε ή είναι ήδη εγκατεστημένος.
+            </p>
+            <a href="#services" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Clients Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
+            
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+
+            <div class="content">
+              <h3>Νομοθεσία</strong></h3>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Ισχύοντες κανονισμοί εγκαταστάσεων ανελκυστήρων <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/1.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Το Π.Δ. περί ανελκυστήρων<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/2.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Οδηγίες και κατευθύνσεις για την ορθή και ομοιόμορφη εφαρμογή των διατάξεων την Κ.Υ.Α<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/3.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Δημοσίευση Κοινών Υπουργικών Αποφάσεων σχετικά με την εγκατάσταση, λειτουργία και ασφάλεια των ανελκυστήρων <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/4.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>05</span> Συμπλήρωση διατάξεων σχετικά με την εγκατάσταση, λειτουργία, συντήρηση και ασφάλεια ανελκυστήρων - ΦΕΚ 2604 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/5.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed"><span>05</span> Συμπλήρωση διατάξεων σχετικά με την εγκατάσταση, λειτουργία, συντήρηση και ασφάλεια ανελκυστήρων - ΦΕΚ 291 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek1.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-7" class="collapsed"><span>06</span> Νόμος 6422/34 - Περί ασκήσεως του επαγγέλματος του μηχανολόγου, του ηλεκτρολόγου και του μηχανολόγου - ηλεκτρολόγου μηχανικού <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek2.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-8" class="collapsed"><span>07</span> Τροποποίηση διατάξεων - ΦΕΚ 696 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek3.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-9" class="collapsed"><span>08</span> Κατασκευή και λειτουργία ανελκυστήρων - ΦΕΚ 815 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek4.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-10" class="collapsed"><span>09</span> Τροποποίηση διατάξεων - ΦΕΚ 1111 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek5.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-11" class="collapsed"><span>10</span> Αντικατάσταση ΚΥΑ - ΦΕΚ 1797 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/fek6.pdf">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-12" class="collapsed"><span>11</span> Γενικός Οικοδομικός Κανονισμός <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/general.doc">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-13" class="collapsed"><span>12</span> ΟΔΗΓΙΑ 95/16/ΕΚ ΤΟΥ ΕΥΡΩΠΑΪΚΟΥ ΚΟΙΝΟΒΟΥΛΙΟΥ ΚΑΙ ΤΟΥ ΣΥΜΒΟΥΛΙΟΥ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <a href="assets/pdf/guide.doc">Κατεβάστε το αρχείο</a>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Υπηρεσιες</h2>
+          <p> Στην τεχνική εταιρεία μας, είμαστε αφοσιωμένοι στην παροχή υψηλής ποιότητας υπηρεσιών εγκατάστασης και συντήρησης που εξασφαλίζουν την ασφάλεια και την απρόσκοπτη λειτουργία των ανελκυστήρων σας.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">Εγκατάσταση</a></h4>
+              <p>Η εγκατάσταση ανελκυστήρων απαιτεί την εμπειρία και την τεχνογνωσία που διαθέτει η ομάδα μας. Ανεξάρτητα από τον τύπο και τις διαστάσεις του ανελκυστήρα που χρειάζεστε, είμαστε εδώ για να σας προσφέρουμε εξειδικευμένες λύσεις που θα ανταποκριθούν στις ανάγκες σας.
+
+                Κάθε έργο εγκατάστασης ανελκυστήρα αντιμετωπίζεται με τη μέγιστη προσοχή και ακρίβεια από την ομάδα μας. Χρησιμοποιούμε μόνο τα πιο σύγχρονα υλικά και τεχνολογίες για να διασφαλίσουμε την αξιοπιστία και την ανθεκτικότητα του ανελκυστήρα σας.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">Συντήρηση</a></h4>
+                <p>Η συντήρηση των ανελκυστήρων αποτελεί κρίσιμο κομμάτι της λειτουργίας τους και είναι απαραίτητη για τη διατήρηση της ασφάλειας και της αποτελεσματικότητάς τους. Η τακτική συντήρηση προλαμβάνει προβλήματα και επισκευές, εξασφαλίζοντας έτσι τη συνεχή και ασφαλή λειτουργία των ανελκυστήρων.
+                  Οι υπηρεσίες μας περιλαμβάνουν την τακτική συντήρηση, την άμεση επιδιόρθωση προβλημάτων, την αντικατάσταση ανταλλακτικών και την αναβάθμιση των συστημάτων σας για να διασφαλίσουμε την απρόσκοπτη λειτουργία τους.
+                  Στην εταιρεία μας, η ασφάλεια είναι πάντα προτεραιότητα. Οι τεχνικοί μας είναι εκπαιδευμένοι και πιστοποιημένοι να αντιμετωπίζουν κάθε πτυχή της συντήρησης ανελκυστήρων με απόλυτη επαγγελματικότητα και αξιοπιστία.
+                  Επικοινωνήστε μαζί μας σήμερα για να μάθετε περισσότερα για τις υπηρεσίες μας συντήρησης ανελκυστήρων και πώς μπορούμε να σας βοηθήσουμε να διατηρήσετε τους ανελκυστήρες σας σε άριστη κατάσταση.
+                  </p>   
+                </div>             
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Μελέτη</a></h4>
+              <p>Η διαδικασία μελέτης και σχεδιασμού ενός νέου ανελκυστήρα αρχίζει με μια λεπτομερή συνεννόηση με τον πελάτη μας. Κατανοούμε τις ανάγκες και τις απαιτήσεις τους, καθώς και τις ιδιαιτερότητες του χώρου όπου θα γίνει η εγκατάσταση του ανελκυστήρα.
+
+                Με βάση τις πληροφορίες που συλλέξαμε, οι ειδικοί μας προχωρούν στην ανάλυση των τεχνικών και αισθητικών παραμέτρων που επηρεάζουν τον σχεδιασμό του ανελκυστήρα. Με βάση αυτήν την ανάλυση, προτείνουμε την κατάλληλη τεχνολογία, το σχέδιο και τα χαρακτηριστικά που θα εξασφαλίσουν μια βέλτιστη λύση για τον πελάτη.
+                
+                Στη συνέχεια, οι ειδικοί μας δημιουργούν ένα λεπτομερές τεχνικό σχέδιο για τον ανελκυστήρα, λαμβάνοντας υπόψη τις προδιαγραφές ασφαλείας και τις νομοθετικές απαιτήσεις. Κατά τη διαδικασία αυτή, δίνεται έμφαση στην προσθήκη προηγμένων τεχνολογικών λύσεων που εξασφαλίζουν την ασφαλή και αποτελεσματική λειτουργία του ανελκυστήρα.
+                Τέλος, με την ολοκλήρωση του τεχνικού σχεδίου, προχωρούμε στην εγκατάσταση του ανελκυστήρα με την υψηλότερη προσοχή στη λεπτομέρεια και την ποιότητα.
+
+                Εάν ενδιαφέρεστε για τη μελέτη και τον σχεδιασμό ενός νέου ανελκυστήρα για τον χώρο σας, επικοινωνήστε μαζί μας σήμερα για να συζητήσουμε τις ανάγκες σας και να βρούμε μαζί την ιδανική λύση που θα καλύψει τις προσδοκίες σας.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">Εκσυγχρονισμός</a></h4>
+              <p>Η εμπειρία και η τεχνογνωσία της ομάδας μας επιτρέπει να προσφέρουμε ολοκληρωμένες υπηρεσίες εκσυγχρονισμού της υπάρχουσας εγκατάστασης που καλύπτουν όλες τις ανάγκες των ανελκυστήρων σας. Ανεξάρτητα από τον τύπο ή το μοντέλο του ανελκυστήρα σας, είμαστε εδώ για να σας παρέχουμε τις καλύτερες λύσεις.</p></p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="#">Προϊόντα</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">Eiusmod Tempor</a></h4>
+              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Cta Section -->
+
+    <!-- ======= Portfoio Section ======= -->
+    <!-- <section id="portfolio" class="portfoio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfoio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfoio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Τσότσης Ιωάννης</h4>
+                <span>Chief Executive Officer</span>
+                <p>Διπλωματούχος Μηχανολόγος Μηχανικός</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Συχνες Ερωτησεις</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Πότε πρέπει να περάσει ο ανελκυστήρας μου από ΕΠΑΝΕΛΕΓΧΟ; <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Σύμφωνα με τη ΝΕΑ Κ.Υ.Α. Φ.Ε.Κ. 2604 22/12/2008 έχουν καθοριστεί οι νέες προθεσμίες που αφορούν τους ανελκυστήρες που δεν έχει εκδοθεί πιστοποιητικό από αναγνωρισμένο φορέα ελέγχου.
+
+1. Για ανελκυστήρες που λειτουργούν χωρίς στοιχεία νομιμότητας μέχρι 31-12-2012
+2. Για ανελκυστήρες που λειτουργούν με προέγκριση εγκατάστασης και έχει συμπληρωθεί 30ετία από την εγκατάσταση τους (παλαιοί) μέχρι 31-12-2010
+3. Για ανελκυστήρες που λειτουργούν με προέγκριση εγκατάστασης και δεν έχει συμπληρωθεί 30ετία από την εγκατάστασή τους (νεώτεροι) μέχρι 31-12-2011
+4. Για ανελκυστήρες σε δημόσια κτίρια, νοσοκομεία, μεγάλα ξενοδ. κλπ. μέχρι 30-6-2009 Για ανελκυστήρες που έχει εκδοθεί πιστοποιητικό από αναγνωρισμένο φορέα ελέγχου, η ημερομηνία επανελέγχου αναγράφεται στο υπάρχον πιστοποιητικό.
+
+Για ανελκυστήρες που έχει εκδοθεί πιστοποιητικό από αναγνωρισμένο φορέα ελέγχου, η ημερομηνία επανελέγχου αναγράφεται στο υπάρχον πιστοποιητικό.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed"> Σε ποιές περιπτώσεις πρέπει να υπάρχουν οι εσωτερικές θύρες του θαλάμου (πορτάκια); <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Για ανελκυστήρες εγκατεστημένους με ημερομηνία μεταγενέστερη της 6/8/1987 είναι υποχρεωτική η χρήση εσωτερικών θυρών θαλάμου σε ΚΑΘΕ περίπτωση.
+
+							Οι ανελκυστήρες εγκατεστημένοι με προγενέστερη από τη παραπάνω ημερομηνία θα μπορούν να λειτουργούν χωρίς εσωτερικές θύρες θαλάμου εφόσον ικανοποιούνται οι παρακάτω απαιτήσεις :
 							
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="lead">
-										Στην εταιρεία μας, δεσμευόμαστε να προσφέρουμε υπηρεσίες εγκατάστασης και συντήρησης ανελκυστήρων υψηλής ποιότητας και αξιοπιστίας. Με την εμπειρία μας και την τεχνογνωσία μας, εξασφαλίζουμε την ομαλή λειτουργία κάθε ανελκυστήρα, προσφέροντας ταυτόχρονα εξειδικευμένες λύσεις που προσαρμόζονται στις ανάγκες και τις απαιτήσεις κάθε πελάτη.
-									</p>	
-								</div>
-							
-								<div class="col-sm-6">
-									<p class="lead">
-										Επικοινωνήστε μαζί μας σήμερα για να μάθετε περισσότερες πληροφορίες σχετικά με τις υπηρεσίες μας και πώς μπορούμε να βοηθήσουμε να βελτιώσετε τον χώρο σας με ασφαλείς και αξιόπιστους ανελκυστήρες.
-									</p>	
-								</div>
-							</div>
-						</li>
-						
-					</ul>
-				</div>
-			</section>
-			
-			<section class="primary-features duplicatable-content">
-				<div class="container">
-					<div class="row">
-		
-							<div class="col-md-4 col-sm-6 clearfix">
-								<div class="feature feature-icon-small">
-									<h6 class="text-white">Κατασκευή ανελκυστήρων στα μέτρα σας</h6>
-									<p class="text-white">
-										Αναβαθμίστε την εμπειρία σας με τους ανελκυστήρες μας - εμπιστευθείτε μας για εξειδικευμένες λύσεις και εξαιρετική εξυπηρέτηση!
-									</p>
-								</div>
-							</div>
-						
-							<div class="col-md-4 col-sm-6 clearfix">
-								<div class="feature feature-icon-small">
-									<h6 class="text-white">Αναλαμβάνουμε κάθε είδους μελέτες</h6>
-									<p class="text-white">
-										Εξατομικευμένες λύσεις μελέτης ανελκυστήρων για κάθε χώρο που ανταποκρίνονται στις ανάγκες σας!"
-									</p>
-								</div>
-							</div>
-						
-							<div class="col-md-4 col-sm-6 clearfix">
-								<div class="feature feature-icon-small">
-									<h6 class="text-white">Συντήρηση - Εκσυγχρονισμός</h6>
-									<p class="text-white">
-										Επαγγελματική συντήρηση για ασφάλεια και αξιοπιστία.
-									</p>
-								</div>
-							</div>
-		
-					</div>
-				
-				</div>
-			</section>
-		</div>
-		
-		<div class="footer-container">
-			<footer class="details">
-				<div class="container">
-					<div class="row">
-												
-						<div class="col-sm-4">
-							<h1>Επικοινωνία</h1>
-							<p>info@tsotsis.gr
-		<br>2310 601083
-		<br>
-		<br>Κολοκοτρώνη 34 και Εδέσσης
-		<br>54630, Σταυρούπολη
-		<br>Θεσσαλονίκη</p>
-						</div>
-						
-						<div class="col-sm-4">
-							<h1>Social Profiles</h1>
-							<ul class="social-icons">
-								<li>
-									<a href="#">
-										<i class="icon social_twitter"></i>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<i class="icon social_facebook"></i>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<i class="icon social_instagram"></i>
-									</a>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-sm-12">
-							<span class="sub">© Copright 2024 - All Rights Reserved. </span>
-						</div>
-					</div>
-					
-				</div>
-			</footer>
-		</div>
-				
-		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="js/jquery.min.js"></script>
-        <script src="js/jquery.plugin.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/skrollr.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/scrollReveal.min.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/twitterFetcher_v10_min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+							α) Ο ανελκυστήρας δεν έχει μεγαλύτερη ταχύτητα από 0,7 m/s
+							β) Όπου με την είσοδο του επιβάτη στο θάλαμο διακόπτονται οι εξωτερικοί χειρισμοί. ( Μη αυτόματος ανελκυστήρας )
+							γ) Για ανελκυστήρες με επιφάνεια θαλάμου μικρότερη από 0.6 τ.μ. (έως 2 ατόμων). Στη περίπτωση αυτή συστήνεται η χρήση φωτοκύτταρων κατανεμημένων καθʼ ύψος της εισόδου στο θάλαμο.</p>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Έχει ο Ανελκυστήρας της πολυκατοικίας μου σύστημα απεγκλωβισμού; <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Όλοι οι Υδραυλικοί ανελκυστήρες σε περίπτωση ΔΙΑΚΟΠΗΣ ΡΕΥΜΑΤΟΣ και ΜΟΝΟ έχουν απεγκλωβισμό. Σε περίπτωση βλάβης για λόγους ασφαλείας ο απεγκλωβισμός ΔΕΝ λειτουργεί. Ο απεγκλωβισμός μπορεί να επιτευχθεί και σε Ηλεκτροκίνητο ανελκυστήρα απαιτείται όμως επιπλέον εγκατάσταση.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Επικοινωνηστε μαζι μας</h2>
+        </div>
+        
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-md-6 d-flex align-items-stretch map-holder" data-aos="fade-up" data-aos-delay="100">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=Τσότσης+Ανελκυστήρες,+Κολοκοτρώνη,+Σταυρούπολη,+Ελλάδα&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div>
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Διεύθυνση:</h4>
+                <p>Κολοκοτρώνη 34 & Εδέσσης, 54630, Σταυρούπολη, Θεσσαλονίκη</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@tsotsis.gr</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Τηλέφωνο:</h4>
+                <p>2310 601083</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Αρχική</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Υπηρεσίες</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Κολοκοτρώνη 34 & Εδέσσης <br>
+              Σταυρούπολη, 54630<br>
+              Θεσσαλονίκη <br />
+              Ελλάδα	 <br><br>
+              <strong>Τηλέφωνο:</strong>2310 601083<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Anyar</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-				
